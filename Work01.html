@@ -1,0 +1,30 @@
+<html>
+  <head>
+<script data-consolejs-channel="441e82c9-6080-357d-0522-23ccccb93ea7" src="https://remotejs.com/agent/agent.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="aframe/aframe.min.js"></script>
+  </head>
+  <body>
+             <a-scene>
+                <a-box color="tomato" depth="2" height="4" width="0.5" position="0 2 -5" wireframe="true"
+                ></a-box>
+                <a-text value="Hello, World!" color="White" position="1 1.5 -3" 
+                        animation="property: position; to: 1 1.5 3; dur: 30000; easing: linear; loop: true" color="tomato"
+                ></a-text>
+                   <a-circle color="#CCC" radius="0.5" position="-2 2 -5" theta-start="90" theta-length="360"
+                   animation="property: theta-length; from: 0; to: 360; dur: 5000; easing: linear; loop: true"
+></a-circle>
+                   <a-entity scale="1 0.5 1" position="-1 1.5 -3"    
+                             animation="property: rotation; to: 90 180 270; dur:17000; easing: linear; loop: true">
+                             <a-cone color="tomato" radius-bottom="0.2" radius-top="0" position="0 0 0"></a-cone>
+                             <a-cylinder color="crimson" radius="0.1" height="2" position="-1 0 0"></a-cylinder>
+                             <a-icosahedron color="#FF926B" radius="0.5" position="1 0 0"></a-icosahedron>
+                   </a-entity>
+<!--        animation="property: rotation; to: 0 360 0; dur: 5000; easing: linear; loop: true" color="tomato"-->
+        <a-camera
+        ></a-camera>
+        <!--<a-sky src="https://images.unsplash.com/photo-1537420327992-d6e192287183?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"></a-sky>-->
+             </a-scene>
+    </a-scene>
+  </body>
+</html>
